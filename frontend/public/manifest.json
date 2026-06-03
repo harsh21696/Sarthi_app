@@ -1,0 +1,30 @@
+{
+  "name": "GramSaathi AI",
+  "short_name": "GramSaathi",
+  "description": "AI-powered assistant for rural citizens of India — crop doctor, weather alerts & government schemes",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a140a",
+  "theme_color": "#166534",
+  "orientation": "portrait-primary",
+  "lang": "en",
+  "categories": ["agriculture", "productivity", "utilities"],
+  "icons": [
+    { "src": "/icons/icon-72.png",  "sizes": "72x72",   "type": "image/png", "purpose": "any" },
+    { "src": "/icons/icon-96.png",  "sizes": "96x96",   "type": "image/png", "purpose": "any" },
+    { "src": "/icons/icon-128.png", "sizes": "128x128", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/icon-144.png", "sizes": "144x144", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/icon-152.png", "sizes": "152x152", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "/icons/icon-384.png", "sizes": "384x384", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ],
+  "screenshots": [
+    { "src": "/screenshots/dashboard.png", "sizes": "1280x800", "type": "image/png", "label": "Dashboard" }
+  ],
+  "shortcuts": [
+    { "name": "AI Chat", "short_name": "Chat", "description": "Start a new AI chat", "url": "/chat", "icons": [{ "src": "/icons/icon-96.png", "sizes": "96x96" }] },
+    { "name": "Crop Doctor", "short_name": "Crop", "description": "Analyze crop disease", "url": "/crop", "icons": [{ "src": "/icons/icon-96.png", "sizes": "96x96" }] },
+    { "name": "Weather", "short_name": "Weather", "description": "Check crop weather alerts", "url": "/weather", "icons": [{ "src": "/icons/icon-96.png", "sizes": "96x96" }] }
+  ]
+}

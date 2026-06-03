@@ -1,0 +1,12 @@
+{
+  "app": { "name": "ग्रामसाथी AI", "tagline": "तुमचा ग्रामीण AI सहाय्यक" },
+  "nav": { "dashboard": "डॅशबोर्ड", "chat": "AI चॅट", "crop": "पीक डॉक्टर", "weather": "हवामान", "schemes": "सरकारी योजना", "voice": "व्हॉइस सहाय्यक", "profile": "प्रोफाइल", "logout": "लॉगआउट" },
+  "auth": { "login": "लॉगिन", "register": "नोंदणी", "email": "ईमेल पत्ता", "password": "पासवर्ड", "name": "पूर्ण नाव", "phone": "फोन नंबर", "role": "मी आहे...", "farmer": "शेतकरी", "student": "विद्यार्थी", "villager": "ग्रामस्थ", "state": "राज्य", "language": "पसंतीची भाषा", "loginBtn": "साइन इन", "registerBtn": "खाते तयार करा", "noAccount": "खाते नाही?", "haveAccount": "आधीच खाते आहे?", "signUp": "साइन अप", "signIn": "साइन इन" },
+  "dashboard": { "welcome": "पुन्हा स्वागत आहे", "chats": "AI चॅट", "crops": "पीक विश्लेषणे", "schemes": "योजना सापडल्या", "recentChats": "अलीकडील चॅट", "recentCrops": "अलीकडील पीक विश्लेषणे", "recentSchemes": "अलीकडील योजना", "quickActions": "जलद क्रिया", "startChat": "AI चॅट सुरू करा", "analyzeCrop": "पीक विश्लेषण", "findSchemes": "योजना शोधा" },
+  "chat": { "title": "AI चॅट", "placeholder": "काहीही विचारा...", "send": "पाठवा", "newChat": "नवीन चॅट", "history": "चॅट इतिहास", "deleteSession": "हटवा", "thinking": "विचार करत आहे...", "noSessions": "अजून कोणतीही चॅट नाही." },
+  "crop": { "title": "पीक डॉक्टर", "upload": "पिकाचा फोटो अपलोड करा", "cropName": "पिकाचे नाव", "analyze": "रोग विश्लेषण करा", "analyzing": "विश्लेषण होत आहे...", "diagnosis": "निदान", "treatment": "उपचार", "history": "इतिहास", "noHistory": "अजून विश्लेषण नाही.", "dragDrop": "फोटो खेचा किंवा ब्राउझ करा", "confidence": "विश्वास" },
+  "schemes": { "title": "सरकारी योजना", "query": "तुम्हाला कोणती मदत हवी आहे?", "placeholder": "उदा. पीक विमा...", "find": "योजना शोधा", "finding": "शोधत आहे...", "history": "मागील विनंत्या", "noHistory": "अजून विनंत्या नाहीत.", "schemesFound": "योजना सापडल्या" },
+  "voice": { "title": "व्हॉइस सहाय्यक", "start": "बोलण्यासाठी टॅप करा", "stop": "थांबा", "listening": "ऐकत आहे...", "processing": "प्रक्रिया होत आहे...", "speak": "बोलत आहे..." },
+  "profile": { "title": "प्रोफाइल सेटिंग्ज", "save": "बदल जतन करा", "saving": "जतन होत आहे...", "saved": "प्रोफाइल अपडेट झाली!" },
+  "common": { "loading": "लोड होत आहे...", "error": "काहीतरी चुकले. पुन्हा प्रयत्न करा.", "retry": "पुन्हा प्रयत्न", "back": "मागे", "cancel": "रद्द करा", "delete": "हटवा", "confirm": "पुष्टी करा", "close": "बंद करा" }
+}

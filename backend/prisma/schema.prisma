@@ -1,0 +1,113 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// ─── Enums ───────────────────────────────────────────────────────────────────
+
+enum UserRole {
+  farmer
+  student
+  villager
+}
+
+enum MessageRole {
+  user
+  assistant
+}
+
+// ─── Models ──────────────────────────────────────────────────────────────────
+
+model User {
+  id                String         @id @default(uuid())
+  name              String
+  email             String         @unique
+  passwordHash      String         @map("password_hash")
+  phone             String?
+  role              UserRole       @default(villager)
+  preferredLanguage String         @default("en") @map("preferred_language")
+  state             String?
+  refreshToken      String?        @map("refresh_token")
+  isAdmin           Boolean        @default(false) @map("is_admin")
+
+  // Email verification
+  emailVerified     Boolean        @default(false) @map("email_verified")
+  otp               String?
+  otpExpiry         DateTime?      @map("otp_expiry")
+
+  // Crop & location (for weather alerts)
+  primaryCrop       String?        @map("primary_crop")
+  city              String?
+  latitude          Float?
+  longitude         Float?
+
+  createdAt         DateTime       @default(now()) @map("created_at")
+  updatedAt         DateTime       @updatedAt @map("updated_at")
+
+  chatSessions      ChatSession[]
+  cropAnalyses      CropAnalysis[]
+  schemeQueries     SchemeQuery[]
+
+  @@map("users")
+}
+
+model ChatSession {
+  id        String        @id @default(uuid())
+  userId    String        @map("user_id")
+  title     String        @default("New Chat")
+  createdAt DateTime      @default(now()) @map("created_at")
+  updatedAt DateTime      @updatedAt @map("updated_at")
+
+  user      User          @relation(fields: [userId], references: [id], onDelete: Cascade)
+  messages  ChatMessage[]
+
+  @@map("chat_sessions")
+}
+
+model ChatMessage {
+  id        String      @id @default(uuid())
+  sessionId String      @map("session_id")
+  role      MessageRole
+  content   String      @db.Text
+  language  String      @default("en")
+  createdAt DateTime    @default(now()) @map("created_at")
+
+  session   ChatSession @relation(fields: [sessionId], references: [id], onDelete: Cascade)
+
+  @@map("chat_messages")
+}
+
+model CropAnalysis {
+  id         String   @id @default(uuid())
+  userId     String   @map("user_id")
+  imageUrl   String   @map("image_url") @db.Text
+  cropName   String?  @map("crop_name")
+  diagnosis  String   @db.Text
+  treatment  String?  @db.Text
+  confidence Float?
+  createdAt  DateTime @default(now()) @map("created_at")
+
+  user       User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@map("crop_analyses")
+}
+
+model SchemeQuery {
+  id           String   @id @default(uuid())
+  userId       String   @map("user_id")
+  query        String   @db.Text
+  response     String   @db.Text
+  schemesFound Int      @default(0) @map("schemes_found")
+  createdAt    DateTime @default(now()) @map("created_at")
+
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@map("scheme_queries")
+}

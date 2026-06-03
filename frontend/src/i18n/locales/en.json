@@ -1,0 +1,57 @@
+{
+  "app": { "name": "GramSaathi AI", "tagline": "Your Rural AI Assistant" },
+  "nav": {
+    "dashboard": "Dashboard", "chat": "AI Chat", "crop": "Crop Doctor",
+    "weather": "Weather", "schemes": "Gov Schemes", "voice": "Voice Assistant", "profile": "Profile", "logout": "Logout"
+  },
+  "auth": {
+    "login": "Login", "register": "Register", "email": "Email Address",
+    "password": "Password", "name": "Full Name", "phone": "Phone Number",
+    "role": "I am a...", "farmer": "Farmer", "student": "Student", "villager": "Villager",
+    "state": "State", "language": "Preferred Language",
+    "loginBtn": "Sign In", "registerBtn": "Create Account",
+    "noAccount": "Don't have an account?", "haveAccount": "Already have an account?",
+    "signUp": "Sign Up", "signIn": "Sign In"
+  },
+  "dashboard": {
+    "welcome": "Welcome back", "chats": "AI Chats", "crops": "Crop Analyses",
+    "schemes": "Schemes Found", "recentChats": "Recent Chats",
+    "recentCrops": "Recent Crop Analyses", "recentSchemes": "Recent Schemes",
+    "quickActions": "Quick Actions", "startChat": "Start AI Chat",
+    "analyzeCrop": "Analyze Crop", "findSchemes": "Find Schemes"
+  },
+  "chat": {
+    "title": "AI Chat", "placeholder": "Ask me anything...", "send": "Send",
+    "newChat": "New Chat", "history": "Chat History", "deleteSession": "Delete",
+    "thinking": "GramSaathi is thinking...", "noSessions": "No chats yet. Start a new one!"
+  },
+  "crop": {
+    "title": "Crop Doctor", "upload": "Upload Crop Image",
+    "cropName": "Crop Name (optional)", "analyze": "Analyze Disease",
+    "analyzing": "Analyzing...", "diagnosis": "Diagnosis", "treatment": "Treatment",
+    "history": "Analysis History", "noHistory": "No analyses yet.",
+    "dragDrop": "Drag & drop image or click to browse",
+    "confidence": "Confidence"
+  },
+  "schemes": {
+    "title": "Government Schemes", "query": "What help do you need?",
+    "placeholder": "e.g. crop insurance, student scholarship, women entrepreneurship...",
+    "find": "Find Schemes", "finding": "Searching schemes...",
+    "history": "Past Queries", "noHistory": "No scheme queries yet.",
+    "schemesFound": "schemes found"
+  },
+  "voice": {
+    "title": "Voice Assistant", "start": "Tap to Speak", "stop": "Stop",
+    "listening": "Listening...", "processing": "Processing...",
+    "speak": "Speaking..."
+  },
+  "profile": {
+    "title": "Profile Settings", "save": "Save Changes", "saving": "Saving...",
+    "saved": "Profile updated successfully!"
+  },
+  "common": {
+    "loading": "Loading...", "error": "Something went wrong. Please try again.",
+    "retry": "Retry", "back": "Back", "cancel": "Cancel", "delete": "Delete",
+    "confirm": "Confirm", "close": "Close"
+  }
+}

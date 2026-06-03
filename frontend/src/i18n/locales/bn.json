@@ -1,0 +1,12 @@
+{
+  "app": { "name": "গ্রামসাথী AI", "tagline": "আপনার গ্রামীণ AI সহকারী" },
+  "nav": { "dashboard": "ড্যাশবোর্ড", "chat": "AI চ্যাট", "crop": "ফসল ডাক্তার", "weather": "আবহাওয়া", "schemes": "সরকারি প্রকল্প", "voice": "ভয়েস সহকারী", "profile": "প্রোফাইল", "logout": "লগআউট" },
+  "auth": { "login": "লগইন", "register": "নিবন্ধন", "email": "ইমেল ঠিকানা", "password": "পাসওয়ার্ড", "name": "পুরো নাম", "phone": "ফোন নম্বর", "role": "আমি...", "farmer": "কৃষক", "student": "ছাত্র", "villager": "গ্রামবাসী", "state": "রাজ্য", "language": "পছন্দের ভাষা", "loginBtn": "সাইন ইন", "registerBtn": "অ্যাকাউন্ট তৈরি করুন", "noAccount": "অ্যাকাউন্ট নেই?", "haveAccount": "ইতিমধ্যে অ্যাকাউন্ট আছে?", "signUp": "সাইন আপ", "signIn": "সাইন ইন" },
+  "dashboard": { "welcome": "আবার স্বাগতম", "chats": "AI চ্যাট", "crops": "ফসল বিশ্লেষণ", "schemes": "প্রকল্প পাওয়া গেছে", "recentChats": "সাম্প্রতিক চ্যাট", "recentCrops": "সাম্প্রতিক ফসল বিশ্লেষণ", "recentSchemes": "সাম্প্রতিক প্রকল্প", "quickActions": "দ্রুত কার্যক্রম", "startChat": "AI চ্যাট শুরু করুন", "analyzeCrop": "ফসল বিশ্লেষণ", "findSchemes": "প্রকল্প খুঁজুন" },
+  "chat": { "title": "AI চ্যাট", "placeholder": "যেকোনো কিছু জিজ্ঞেস করুন...", "send": "পাঠান", "newChat": "নতুন চ্যাট", "history": "চ্যাট ইতিহাস", "deleteSession": "মুছুন", "thinking": "ভাবছে...", "noSessions": "এখনো কোনো চ্যাট নেই।" },
+  "crop": { "title": "ফসল ডাক্তার", "upload": "ফসলের ছবি আপলোড করুন", "cropName": "ফসলের নাম", "analyze": "রোগ বিশ্লেষণ করুন", "analyzing": "বিশ্লেষণ হচ্ছে...", "diagnosis": "রোগ নির্ণয়", "treatment": "চিকিৎসা", "history": "ইতিহাস", "noHistory": "এখনো বিশ্লেষণ নেই।", "dragDrop": "ছবি টেনে দিন", "confidence": "আস্থা" },
+  "schemes": { "title": "সরকারি প্রকল্প", "query": "আপনার কী সাহায্য দরকার?", "placeholder": "যেমন ফসল বীমা...", "find": "প্রকল্প খুঁজুন", "finding": "খোঁজা হচ্ছে...", "history": "পূর্ববর্তী অনুসন্ধান", "noHistory": "এখনো অনুসন্ধান নেই।", "schemesFound": "প্রকল্প পাওয়া গেছে" },
+  "voice": { "title": "ভয়েস সহকারী", "start": "কথা বলতে ট্যাপ করুন", "stop": "থামুন", "listening": "শুনছি...", "processing": "প্রক্রিয়া হচ্ছে...", "speak": "বলছে..." },
+  "profile": { "title": "প্রোফাইল সেটিংস", "save": "পরিবর্তন সংরক্ষণ করুন", "saving": "সংরক্ষণ হচ্ছে...", "saved": "প্রোফাইল আপডেট হয়েছে!" },
+  "common": { "loading": "লোড হচ্ছে...", "error": "কিছু ভুল হয়েছে। আবার চেষ্টা করুন।", "retry": "আবার চেষ্টা", "back": "পিছনে", "cancel": "বাতিল", "delete": "মুছুন", "confirm": "নিশ্চিত করুন", "close": "বন্ধ করুন" }
+}

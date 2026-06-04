@@ -1,7 +1,11 @@
 import axios from 'axios'
 
+// In production (Render/Vercel): uses VITE_API_URL = https://gramsaathi-backend.onrender.com/api
+// In development: uses /api (proxied by Vite to localhost:5000)
+const BASE_URL = import.meta.env.VITE_API_URL || '/api'
+
 const api = axios.create({
-  baseURL: '/api',
+  baseURL: BASE_URL,
   headers: { 'Content-Type': 'application/json' },
 })
 
@@ -51,7 +55,7 @@ api.interceptors.response.use(
       const refreshToken = localStorage.getItem('refreshToken')
 
       try {
-        const { data } = await axios.post('/api/auth/refresh', { refreshToken })
+        const { data } = await axios.post(`${BASE_URL}/auth/refresh`, { refreshToken })
         localStorage.setItem('accessToken', data.accessToken)
         localStorage.setItem('refreshToken', data.refreshToken)
         api.defaults.headers.Authorization = `Bearer ${data.accessToken}`

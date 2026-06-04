@@ -1,6 +1,41 @@
+# Dependencies
 node_modules/
+.pnp
+.pnp.js
+
+# Build output
 dist/
+build/
+.next/
+
+# Environment variables — NEVER commit these
 .env
-uploads/
+.env.local
+.env.*.local
+backend/.env
+frontend/.env
+
+# Keep .env.example (safe to commit — no real values)
+!.env.example
+!backend/.env.example
+
+# Uploads (user files — not committed, Render uses persistent disk)
+backend/uploads/*
+!backend/uploads/.gitkeep
+
+# Logs
 *.log
+npm-debug.log*
+logs/
+
+# OS
 .DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+
+# Prisma
+backend/prisma/migrations/.migration_lock.toml

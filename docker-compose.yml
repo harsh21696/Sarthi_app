@@ -27,7 +27,7 @@ services:
     restart: unless-stopped
     environment:
       NODE_ENV: production
-      PORT: 5000
+      PORT: 10000
       DATABASE_URL: postgresql://postgres:${DB_PASSWORD:-postgres}@db:5432/gramsaathi_db
       JWT_SECRET: ${JWT_SECRET}
       JWT_REFRESH_SECRET: ${JWT_REFRESH_SECRET}
@@ -37,7 +37,7 @@ services:
       GMAIL_APP_PASSWORD: ${GMAIL_APP_PASSWORD}
       FRONTEND_URL: ${FRONTEND_URL:-http://localhost:5173}
     ports:
-      - "5000:5000"
+      - "10000:10000"
     depends_on:
       db:
         condition: service_healthy

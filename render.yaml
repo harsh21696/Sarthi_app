@@ -9,7 +9,7 @@ services:
     region: singapore          # Closest to India
     plan: free
     rootDir: backend
-    buildCommand: npm install && npx prisma generate
+    buildCommand: npm install && rm -rf node_modules/.prisma && npx prisma generate
     startCommand: npx prisma migrate deploy && node server.js
     healthCheckPath: /health
     envVars:
@@ -45,6 +45,8 @@ services:
         value: ./uploads
       - key: MAX_FILE_SIZE
         value: 5242880
+      - key: PRISMA_CLI_BINARY_TARGETS
+        value: debian-openssl-3.0.x
 
   # ─── Frontend Static Site ────────────────────────────────────────────────────
   - type: web

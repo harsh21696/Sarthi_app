@@ -13,8 +13,7 @@ COPY . .
 RUN npx prisma generate
 
 # ---- production stage ----
-FROM node:20-slim AS production          # <-- CHANGED: slim instead of alpine
-
+FROM node:20-slim AS production
 WORKDIR /app
 
 # Install OpenSSL (required by Prisma engine)
